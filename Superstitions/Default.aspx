@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Superstitions.Default111" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Superstitions.Default111" ErrorPage="error.html" %>
 
 <%@ Import Namespace="Superstitions" %>
 
@@ -13,6 +13,7 @@
         <div>
             <%: $"<b>{applicationTitle}</b>" %>
             <asp:Literal Text="<%$ AppSettings:message %>" runat="server"></asp:Literal>
+            <% int i = 1, j = 0, k = i / j; %>
         </div>
     </form>
 </body>
