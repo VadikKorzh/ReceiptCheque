@@ -7,15 +7,23 @@ using System.Web.UI.WebControls;
 
 namespace Superstitions
 {
-    public partial class Default111: System.Web.UI.Page
+    public partial class Default: System.Web.UI.Page
     {
         protected const String applicationTitle = "ShrineTemple";
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //firstDiv.InnerHtml = Server.HtmlEncode(NewWords[0]);
         }
-        public String[] newWords => new[] { "versed", "uncharted", "redeem" };
+        public String[] NewWords => new[] { "<button type=\"submit\">Dynamic button</button>", "uncharted", "redeem" };
 
-        public Array GetNewWords() => newWords;
+        public Array GetNewWords() => NewWords;
+    }
+    class aaa
+    {
+
+    }
+    class bbb : aaa
+    {
+
     }
 }
